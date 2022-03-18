@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Secular+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+body {
+    background-image: url(../img/space-background.jpg);
+    color: #ddd;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Secular One', sans-serif;
+    margin-top: 2rem;
+    color: #00feac;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
+}
+
+h2 {
+    font-size: max(2vw, 2rem);
+}
+
+/* Estilos da Página index.html */
+
+.cabecalho {
+    background-color: #2d2831;
+    margin-top: 0;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2.5rem;
+    padding: 15px;
+}
+
+a {
+    color: #e8e8e8;
+    font-size: 2rem;
+    transition: color .3s ease-in;
+}
+
+a:hover {
+    color: #00feac;
+    text-decoration: overline;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imagem {
+     border-radius: 50%;
+     width: 15vw;
+     border: 2px solid #f6a6eb ;
+     padding: 5px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 40px;
+}
+
+.video {
+    width: 40vw;
+    aspect-ratio: 3/2;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.spotify {
+    width: 40vw;
+    aspect-ratio: 3/2;
+    margin: 2rem auto;
+    display: block;
+}
+
+hr {
+    border: 1px solid #e8e8e8;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 2.5rem 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+/* Estilos da Página contact.html */
+
+.contato {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+    min-height: 20vw;
+}
+
+.form {
+    max-width: 30vw;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 1rem;
+    background-color: #e8e8e8;
+}
+
+.mapa {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.maps {
+    width: 100%;
+    aspect-ratio: 2/1;
+    border-radius: 1rem;
+}
+
+.enviar {
+    width: 75%;
+    margin: 1rem auto;
+    display: block;
+    padding: 1rem 0;
+    border-radius: 16px;
+    border: 3px solid #f6a6eb;
+    color: #e8e8e8;
+    background-color: transparent;
+    font-size: 1rem;
+    transition: background-color .3s ease-out;
+}
+
+.enviar:hover {
+    background-color: #00feac;
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        width: 90vw;
+        flex-direction: column;
+        flex-direction: column;
+    }
+
+    .imagem {
+        width: 50vw;
+    }
+
+    .video {
+        width: 70vw;
+    }
+}
