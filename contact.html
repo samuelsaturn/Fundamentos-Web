@@ -30,22 +30,26 @@
             <div class="form">
                 <form>
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome">
+                    <input type="text" id="nome" onkeyup="validaNome()">
+                    <div id="txtNome"></div>
 
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" onkeyup="validaEmail()">
+                    <div id="txtEmail"></div>
 
                     <label for="assunto">Assunto:</label>
-                    <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+                    <textarea name="assunto" id="assunto" cols="30" rows="3" onkeyup="validaAssunto()"></textarea>
+                    <div id="txtAssunto"></div>
 
-                    <button class="enviar">Enviar</button>
+                    <button class="enviar" onclick="enviar()">Enviar</button>
                 </form>
             </div>
 
             <div class="mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.707769671679!2d-35.764188785668516!3d-8.232113184924724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aa253dfb7918bf%3A0x916d5d27a2da1592!2sN%C3%A3o%20Sei%20-%20Gameleira%2C%20Bezerros%20-%20PE%2C%2055660-000!5e0!3m2!1spt-BR!2sbr!4v1647450380512!5m2!1spt-BR!2sbr"
-                    width="600" height="450" class="maps" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    width="600" height="450" class="maps" style="border:0;" allowfullscreen="" loading="lazy" id="mapa" onmousemove="zoom()" onmouseout="normal()">
+                </iframe>
             </div>
         </section>
     </main>
@@ -54,6 +58,8 @@
     <footer>
         <p>Feito por Saturno 🪐</p>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 
 </body>
 

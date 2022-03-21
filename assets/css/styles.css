@@ -38,19 +38,17 @@ h2 {
     margin-top: 0;
 }
 
-
-
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     list-style: none;
-    gap: 2.5rem;
+    gap: 1rem;
     padding: 15px;
 }
 
 a {
     color: #e8e8e8;
-    font-size: 2rem;
+    font-size: 1rem;
     transition: color .3s ease-in;
 }
 
@@ -136,8 +134,7 @@ input, textarea {
     width: 100%;
     padding: 5px 10px;
     border-radius: 10px;
-    border: 0;
-    margin-bottom: 1rem;
+    border: 2px solid #2d2831;
     background-color: #e8e8e8;
 }
 
@@ -151,6 +148,7 @@ input, textarea {
     width: 100%;
     aspect-ratio: 2/1;
     border-radius: 1rem;
+    margin: 20px;
 }
 
 .enviar {
@@ -170,7 +168,20 @@ input, textarea {
     background-color: #00feac;
 }
 
+#txtNome {
+    font-size: 12px;
+}
+
+#txtEmail {
+    font-size: 12px;
+}
+
 @media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
     .sobre {
         width: 90vw;
         flex-direction: column;
@@ -183,5 +194,17 @@ input, textarea {
 
     .video {
         width: 70vw;
+    }
+
+    .contato {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mapa {
+        width: 80vw;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 25px;
     }
 }
